@@ -1,0 +1,18 @@
+FROM php:8.2-cli
+
+RUN apt-get update && apt-get install -y wget netcat-openbsd
+
+RUN wget -q -O /usr/bin/wait-for https://raw.githubusercontent.com/eficode/wait-for/v2.2.3/wait-for && \
+    chmod +x /usr/bin/wait-for
+
+RUN docker-php-ext-install mysqli
+
+RUN useradd -u 1000 -ms /bin/bash php
+
+USER php
+
+WORKDIR /home/php/app
+
+EXPOSE 8000
+
+CMD ["php", "-S", "0.0.0.0:8000", "-t", "./src"]

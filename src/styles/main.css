@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.title, .modal-title  {
+  margin: 1rem 1rem;
+  text-align: center;
+}
+
+.card {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-flex {
+  display: flex;
+}
+
+.taskInput {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button:hover{
+  filter: brightness(0.9);
+}
+
+.addTaskBtn {
+  background-color: #4CAF50;
+  color: #ffffff;
+
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.empty {
+  color: #6e6d6d;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+}
+
+.delete-btn {
+  background-color: #FF0000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.edit-btn {
+  background-color: #888;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+/* Modal */
+.modal {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000066;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.taskNameInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+.modal-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cancel-btn {
+  background-color: #FF0000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
