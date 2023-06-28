@@ -9,7 +9,7 @@ class DatabaseConfig
     $host = 'db';
     $user = 'root';
     $password = 'mypassword';
-    $database = 'db-xneo';
+    $database = 'mydb';
 
     $this->connection = mysqli_connect($host, $user, $password, $database);
     if (!$this->connection) {

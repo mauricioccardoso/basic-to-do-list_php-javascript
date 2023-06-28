@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tarefas - XNEO</title>
-  <link rel="stylesheet" type="text/css" href="./styles/main.css">
-</head>
-<body>
-  <div class="container">
-    <h1 class="title">Lista de Tarefas - XNEO</h1>
-    
-    <div class="card">
-        <form class="card-flex" id="formCreate">
-        <input type="text" class="taskInput" id="taskInput" placeholder="Digite uma tarefa" required>
-        <button class="addTaskBtn" id="addTaskBtn" type="submit">Adicionar</button>
-      </form>
-    </div>
-    
-    <div class="card">
-      <ul class="taskList" id="taskList">
-        <li class="empty">Lista vazia</li>
-      </ul>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas - Teste</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Lista de Tarefas - Teste</h1>
 
-  <!-- Modal -->
-  <div id="editModal" class="modal" style="display: none;">
-    <div class="modal-content">
-      <h2 class="modal-title">Editar Tarefa</h2>
-      <input type="text" class="taskNameInput" id="taskNameInput" placeholder="Nome da tarefa" >
-      <input type="number" id="modalTaskId" hidden>
-      <div class="modal-buttons">
-        <button class="cancel-btn" id="cancel-btn">Cancelar</button>
-        <button class="save-btn" id="save-btn">Salvar</button>
+      <div class="card">
+        <form class="card-flex" id="formCreate">
+          <input
+            type="text"
+            class="taskInput"
+            id="taskInput"
+            placeholder="Digite uma tarefa"
+            required
+          />
+          <button class="addTaskBtn" id="addTaskBtn" type="submit">
+            Adicionar
+          </button>
+        </form>
+      </div>
+
+      <div class="card">
+        <ul class="taskList" id="taskList">
+          <li class="empty">Lista vazia</li>
+        </ul>
       </div>
     </div>
-  </div>
 
+    <!-- Modal -->
+    <div id="editModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <h2 class="modal-title">Editar Tarefa</h2>
+        <input
+          type="text"
+          class="taskNameInput"
+          id="taskNameInput"
+          placeholder="Nome da tarefa"
+        />
+        <input type="number" id="modalTaskId" hidden />
+        <div class="modal-buttons">
+          <button class="cancel-btn" id="cancel-btn">Cancelar</button>
+          <button class="save-btn" id="save-btn">Salvar</button>
+        </div>
+      </div>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="module" src="./js/ajaxRequests.js"></script>
-  <script type="module" src="./js/main.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./js/ajaxRequests.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>

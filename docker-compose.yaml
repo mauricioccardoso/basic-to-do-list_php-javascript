@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   app:
@@ -13,7 +13,7 @@ services:
     depends_on:
       - db
     networks:
-      - network-xneo
+      - network-app
 
   db:
     image: mysql:8.0
@@ -22,13 +22,13 @@ services:
     ports:
       - 3306:3306
     environment:
-      - MYSQL_DATABASE=db-xneo
+      - MYSQL_DATABASE=mydb
       - MYSQL_ROOT_PASSWORD=mypassword
     volumes:
       - ./_dbData:/var/lib/mysql
     networks:
-      - network-xneo
+      - network-app
 
 networks:
-  network-xneo:
+  network-app:
     driver: bridge

@@ -1,4 +1,4 @@
-# XNEO - To-do List
+# To-do List - Teste Para Desenvolvedor
 
 Projeto desenvolvido sem utilização de frameworks, somente com PHP puro, JavaScript, HTML e CSS. Para o banco de dados foi utiliazdo o Mysql. E Docker e Docker compose para criação e orquestação de containers.
 
@@ -53,7 +53,7 @@ Projeto desenvolvido sem utilização de frameworks, somente com PHP puro, JavaS
   $host = 'localhost';
   $user = 'root';
   $password = 'mypassword';
-  $database = 'db-xneo';
+  $database = 'mydb';
 ```
 
 3. Na raiz do projeto. Utilize o comando abaixo para subir o servido php apontando para o arquivo "index.html".
